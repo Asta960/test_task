@@ -1035,7 +1035,7 @@ address {
   font-weight: 700;
   color: var(--black-gray);
   transition: outline 0.2s ease-in-out,
-  color 0.2ss ease-in;
+  color 0.2s ease-in;
 }
 
 .adress__telephone:focus {
@@ -1059,7 +1059,7 @@ address {
   font-weight: 700;
   color: var(--black-gray);
   transition: outline 0.2s ease-in-out,
-  color 0.2ss ease-in;
+  color 0.2s ease-in;
 }
 
 .adress__email:focus {

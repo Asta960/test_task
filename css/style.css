@@ -76,7 +76,13 @@ html {
   line-height: 0;
 }
 
-p, a, span, h2, h3, address {
+p,
+a,
+span,
+h2,
+h3,
+address,
+h1 {
   line-height: normal;
 }
 
@@ -120,10 +126,10 @@ address {
   --black-gray4: #242424;
   --black-gray5: #989898;
   --red-pink: #ed2353;
-  --red-pink2:rgb(234, 136, 159);
+  --red-pink2: rgb(234, 136, 159);
   --red-pink3: #c60d38;
   --red-pink4: #b86074;
-  --pink:#f5c7c9;
+  --pink: #f5c7c9;
   --pink2: #ef3e68;
   --pink3: rgba(239, 62, 104, 0.55);
 }
@@ -397,9 +403,9 @@ address {
   fill: var(--white);
   cursor: pointer;
   transition: outline 0.3s ease-in-out,
-  background-color 0.2s ease-in-out,
-  color 0.1s ease-in-out,
-  fill 0.1s ease-in-out;
+    background-color 0.2s ease-in-out,
+    color 0.1s ease-in-out,
+    fill 0.1s ease-in-out;
 }
 
 .red-btn-text {
@@ -448,7 +454,7 @@ address {
   overflow: hidden;
 }
 
-.card-1__bgimg-1{
+.card-1__bgimg-1 {
   position: absolute;
   right: -102px;
   bottom: -65px;
@@ -523,6 +529,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-height: 555px;
 }
 
 .card-3__div,
@@ -554,6 +562,44 @@ address {
 
 .card-6__img {
   max-height: 139px;
+}
+
+.card-1__btn {
+  display: inline-flex;
+}
+
+.div-card {
+  max-width: 100%;
+  height: 100%;
+}
+
+.card-2__title,
+.card-3__title,
+.card-4__title,
+.card-5__title,
+.card-6__title {
+  color: var(--black);
+  transition: color 0.3s ease-in-out;
+}
+
+.div-card-2-6 a:active .card-2__title {
+  color: var(--red-pink);
+}
+
+.div-card-2-6 a:active .card-3__title {
+  color: var(--red-pink);
+}
+
+.div-card-2-6 a:active .card-4__title {
+  color: var(--red-pink);
+}
+
+.div-card-2-6 a:active .card-5__title {
+  color: var(--red-pink);
+}
+
+.div-card-2-6 a:active .card-6__title {
+  color: var(--red-pink);
 }
 
 /* section-hit */
@@ -591,7 +637,7 @@ address {
   outline-offset: 3px;
   color: var(--red-pink);
   transition: outline 0.3s ease-in-out,
-  color 0.3s ease-in-out;
+    color 0.3s ease-in-out;
 }
 
 .title-hit__all-hit:focus {
@@ -622,7 +668,8 @@ address {
 }
 
 .card-hit__img {
-  margin: 0 0 16px;
+  margin: 0;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -655,7 +702,7 @@ address {
   background-color: inherit;
   cursor: pointer;
   transition: color 0.1s ease-in-out,
-  background-color 0.1s ease-in-out;
+    background-color 0.1s ease-in-out;
 }
 
 .div-price__btn:focus {
@@ -684,6 +731,20 @@ address {
   font-size: 16px;
   font-weight: 400;
   color: var(--black-gray4);
+  word-break: break-word;
+}
+
+.img-div-hit {
+  margin: 0 0 16px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 372px;
+  object-fit: cover;
+}
+
+.card-hit a {
+  display: inline-block;
+  line-height: 0;
 }
 
 /* discount-wrap */
@@ -849,9 +910,9 @@ address {
   cursor: pointer;
   fill: var(--white);
   transition: fill 0.2s ease-in-out,
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  outline 0.2s ease-in-out;
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    outline 0.2s ease-in-out;
 }
 
 .slider__btn-svg {
@@ -895,19 +956,6 @@ address {
   padding-bottom: 1px;
 }
 
-.slider__num-page {
-  margin: 0;
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--white-gray2);
-}
-
-.slider__num {
-  margin: 0;
-  font-size: 34px;
-  color: var(--black-gray);
-}
-
 .itc-slider-btn {
   display: inline-block;
   height: 47px;
@@ -916,12 +964,12 @@ address {
   cursor: pointer;
   fill: var(--red-pink);
   stroke-width: 1;
-  transition: fill 0.2s ease-in-out,
-  outline 0.5s ease-in-out;
+  transition: fill 0.1s ease-in-out,
+    outline 0.1s ease-in-out;
 }
 
 .itc-slider-btn:focus {
-  outline-color: var(--red-pink4);
+  outline: none;
 }
 
 .itc-slider-btn:hover {
@@ -1035,7 +1083,7 @@ address {
   font-weight: 700;
   color: var(--black-gray);
   transition: outline 0.2s ease-in-out,
-  color 0.2s ease-in;
+    color 0.2s ease-in;
 }
 
 .adress__telephone:focus {
@@ -1059,7 +1107,7 @@ address {
   font-weight: 700;
   color: var(--black-gray);
   transition: outline 0.2s ease-in-out,
-  color 0.2s ease-in;
+    color 0.2s ease-in;
 }
 
 .adress__email:focus {
@@ -1105,3 +1153,97 @@ address {
   border: 1px solid var(--white-gray3);
 }
 
+
+
+/* slider swiper */
+.swiper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 22px 0 0 24px;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  max-width: 1380px;
+
+}
+
+.swiper-slide {
+  display: flex;
+  gap: 78px;
+  width: 100%;
+  max-width: 1256px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-div {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 50px;
+  width: 100%;
+  max-width: 1380px;
+  height: 100%;
+  min-height: 640px;
+}
+
+.swiper-div-hiden {
+position: absolute;
+top: 0;
+left: 50px;
+right: calc(50px - 10%);
+bottom: 0;
+overflow: hidden;
+}
+
+.swiper-button-next::after {
+  content: '';
+}
+
+.swiper-button-prev::after {
+  content: '';
+}
+
+.swiper-pagination {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white-gray2);
+  z-index: 0;
+}
+
+/* .slider__num-page {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white-gray2);
+} */
+
+.swiper-pagination-current {
+  margin: 0;
+  font-size: 34px;
+  color: var(--black-gray);
+}
+
+
+/* .slider__num {
+  margin: 0;
+  font-size: 34px;
+  color: var(--black-gray);
+} */
+
+.move-block {
+  position: absolute;
+  bottom: 5px;
+  right: 122px;
+  display: flex;
+  height: 47px;
+  width: 500px;
+}

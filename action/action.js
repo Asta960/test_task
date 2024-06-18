@@ -33,3 +33,7 @@ function timeChange(endtime) {
 }
 
 addActionTimer('action');
+addActionTimer('action2');
+addActionTimer('action3');
+addActionTimer('action4');
+addActionTimer('action5');

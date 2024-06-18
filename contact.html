@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ортенсия. Контакты</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__top">
+        <div class="header__top__contacts contacts">
+          <p class="contacts__city">Москва</p>
+          <div class="contacts__time-work time-work">
+            <p class="time-work__descr">График работы:</p>
+            <p class="time-work__time">Ежедневно с 10:00 до 20:00</p>
+          </div>
+        </div>
+        <a href="#" class="header__top__logo logo">
+          <img class="logo__img" src="./img/logo.svg" alt="Логотип магазина цветов Ортенсия. Цветы с любовью">
+        </a>
+        <div class="header__top__btn-div btn-div">
+          <div>
+            <a class="btn-div__search search" href="#">
+              <svg class="search__svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.2297 18.4595C5.68458 18.4595 2 14.7749 2 10.2297C2 5.68458 5.68458 2 10.2297 2C14.7749 2 18.4595 5.68458 18.4595 10.2297C18.4595 12.1957 17.7701 14.0006 16.62 15.416L22.7506 21.5467C23.0831 21.8791 23.0831 22.4182 22.7506 22.7506C22.4182 23.0831 21.8791 23.0831 21.5467 22.7506L15.416 16.62C14.0006 17.7701 12.1957 18.4595 10.2297 18.4595ZM10.2297 16.7568C13.8345 16.7568 16.7568 13.8345 16.7568 10.2297C16.7568 6.62495 13.8345 3.7027 10.2297 3.7027C6.62495 3.7027 3.7027 6.62495 3.7027 10.2297C3.7027 13.8345 6.62495 16.7568 10.2297 16.7568Z" />
+              </svg>
+            </a>
+          </div>
+          <a class="btn-div__bascket basket" href="#">
+            <svg class="basket__svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.68638 4.14285L5.35476 2.78357C5.09658 1.73512 4.17153 0.999938 3.11054 1H2V2.57142H3.11054C3.47355 2.56065 3.79474 2.80935 3.88175 3.16856L6.62725 14.5457L6.9126 15.7164C7.17282 16.7734 8.11035 17.5109 9.17995 17.4999H19.7378V15.9285H9.17995C8.81694 15.9393 8.49574 15.6906 8.40874 15.3314L8.3162 14.9385L19.7378 12.1964C20.5822 11.9964 21.246 11.3322 21.4576 10.4757L23 4.14285H5.68638ZM19.9923 10.0985C19.9209 10.3855 19.6973 10.6072 19.4139 10.6721L7.96144 13.4142L6.07198 5.71427H21.0643L19.9923 10.0985ZM5.85604 20.6428C5.85604 19.341 6.89189 18.2857 8.16967 18.2857C9.44745 18.2857 10.4833 19.341 10.4833 20.6428C10.4833 21.9446 9.44745 22.9999 8.16967 22.9999C6.89189 22.9999 5.85604 21.9446 5.85604 20.6428ZM7.39846 20.6428C7.39846 21.0767 7.74374 21.4285 8.16967 21.4285C8.59559 21.4285 8.94087 21.0767 8.94087 20.6428C8.94087 20.2089 8.59559 19.8571 8.16967 19.8571C7.74374 19.8571 7.39846 20.2089 7.39846 20.6428ZM15.2867 19.7408C15.6448 18.86 16.4884 18.2857 17.4242 18.2857C18.7019 18.2857 19.7378 19.341 19.7378 20.6428C19.7378 21.5962 19.1741 22.4557 18.3096 22.8205C17.445 23.1853 16.4499 22.9837 15.7882 22.3095C15.1265 21.6354 14.9285 20.6216 15.2867 19.7408ZM16.653 20.6428C16.653 21.0767 16.9982 21.4285 17.4242 21.4285C17.8501 21.4285 18.1954 21.0767 18.1954 20.6428C18.1954 20.2089 17.8501 19.8571 17.4242 19.8571C16.9982 19.8571 16.653 20.2089 16.653 20.6428Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav2" id="nav2">
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./flower-card.html">Цветы</a></li>
+            <li><a href="./prezent.html">Подарки</a></li>
+            <li><a href="#">Шары</a></li>
+            <li><a href="#">Для мужчин</a></li>
+            <li><a href="#">Для женщин</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+
+
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__item__text" href="./index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__text flower" href="./flower-card.html">Цветы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__text" href="./prezent.html">Подарки</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__text" href="#">Шары</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__text" href="#">Для мужчин</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__item__text" href="#">Для женщин</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__section-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="./index.html">Главная</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link breadcrumb__link-red" href="#">Контакты</a>
+        </li>
+      </ul>
+    </section>
+    <section class="main__section-map">
+      <div class="map__container">
+        <h2 class="footer__title red-title"><span class="red-title-span">Наши</span> контакты</h2>
+        <div class="footer__adress adress">
+          <div class="column-1">
+            <h3 class="adress__title">Магазин лучших <span class="color-red">цветов</span> в мире</h3>
+            <img class="adress__img" src="./img/adress.jpg" alt="Витрина цветочного магазина">
+          </div>
+          <div class="column-2">
+            <ul class="adress__list">
+              <li class="addres__item">
+                <p class="adress__descr">Адрес:</p>
+                <address class="adress__adress">г. Москва, Китай город. д34</address>
+              </li>
+              <li class="addres__item">
+                <p class="adress__descr">График работы:</p>
+                <p class="adress__adress">Ежедневно с 10:00 до 20:00</p>
+              </li>
+            </ul>
+          </div>
+          <div class="column-3">
+            <a href="tel:80000000000" class="adress__telephone">8 000 000 00 00</a>
+            <a href="mailto:info@info.ru" class="adress__email">info@info.ru</a>
+            <address class="adress__links">
+              <a href="#" class="adress__link">
+                <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M28.0529 14.6939C28.1937 14.3025 28.0529 14.0178 27.4291 14.0178H25.3565C24.8333 14.0178 24.5918 14.2669 24.451 14.5338C24.451 14.5338 23.3845 16.8114 21.8954 18.2882C21.4125 18.7153 21.1911 18.8576 20.9296 18.8576C20.7887 18.8576 20.6076 18.7153 20.6076 18.3239V14.6761C20.6076 14.2135 20.4466 14 20.0039 14H16.7441C16.4221 14 16.2209 14.2135 16.2209 14.4271C16.2209 14.8719 16.9654 14.9787 17.0459 16.2242V18.9288C17.0459 19.516 16.9252 19.6228 16.6636 19.6228C15.9593 19.6228 14.2489 17.3274 13.2227 14.7118C13.0214 14.1957 12.8202 14 12.297 14H10.2043C9.60062 14 9.5 14.2491 9.5 14.516C9.5 14.9965 10.2043 17.4164 12.7799 20.6192C14.4904 22.8078 16.9252 23.9822 19.1185 23.9822C20.4466 23.9822 20.6076 23.7153 20.6076 23.2705V21.6157C20.6076 21.0819 20.7283 20.9929 21.1509 20.9929C21.4527 20.9929 21.996 21.1352 23.2235 22.185C24.632 23.4306 24.8735 24 25.6583 24H27.7309C28.3346 24 28.6163 23.7331 28.4553 23.2171C28.2742 22.7011 27.5901 21.9538 26.7047 21.064C26.2217 20.5659 25.4973 20.0143 25.276 19.7473C24.9741 19.3915 25.0546 19.2491 25.276 18.9288C25.2559 18.9288 27.7913 15.7616 28.0529 14.6939Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a href="#" class="adress__link">
+                <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="38" height="38" />
+                  <path
+                    d="M26.4654 11.1324C26.4654 11.1324 28.1306 10.4831 27.9918 12.06C27.9455 12.7093 27.5293 14.9818 27.2055 17.4398L26.0954 24.7211C26.0954 24.7211 26.0029 25.7878 25.1703 25.9733C24.3377 26.1588 23.0889 25.324 22.8576 25.1385C22.6726 24.9994 19.3886 22.9123 18.2323 21.892C17.9085 21.6138 17.5384 21.0572 18.2785 20.408L23.1352 15.7702C23.6902 15.2137 24.2453 13.9151 21.9326 15.4919L15.457 19.8978C15.457 19.8978 14.717 20.3616 13.3294 19.9442L10.3229 19.0166C10.3229 19.0166 9.2128 18.321 11.1092 17.6253C15.7346 15.4455 21.4238 13.2194 26.4654 11.1324Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </address>
+          </div>
+
+        </div>
+      </div>
+      <div class="map-div">
+        <iframe tabindex="-1" class="footer__map map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2489198037847!2d37.63178554458453!3d55.754177999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af61dd050fd%3A0x8f1bc79e5e511ac7!2z0YHRgi4g0LwuINCa0LjRgtCw0Lkt0LPQvtGA0L7QtA!5e0!3m2!1sru!2sru!4v1717766332824!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__author">Разработано</p>
+      <p class="footer__copyrate">© 2022 Магазин лучших цветов в мире</p>
+    </div>
+  </footer>
+</body>
+
+</html>

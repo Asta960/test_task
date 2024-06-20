@@ -1,0 +1,1079 @@
+:root {
+  --P: 'Philosopher';
+  --black: #000;
+  --white: #fff;
+  --white06: rgba(255, 255, 255, 0.6);
+  --invis: rgba(0, 0, 0, 0);
+  --white-gray: #f6f5f7;
+  --white-gray2: #c3c5ce;
+  --white-gray3: #e0e2ea;
+  --white-gray4: #B7B4B4;
+  --white-pink: #fffafa;
+  --gray-white: #a9a9b6;
+  --gray-white2: #f2f2f2;
+  --gray-white3: #81888f;
+  --black-gray: #333;
+  --black-gray2: #101010;
+  --black-gray3: #2f2828;
+  --black-gray4: #242424;
+  --black-gray5: #989898;
+  --red-pink: #ed2353;
+  --red-pink2: rgb(234, 136, 159);
+  --red-pink3: #c60d38;
+  --red-pink4: #b86074;
+  --pink: #f5c7c9;
+  --pink2: #ef3e68;
+  --pink3: rgba(239, 62, 104, 0.55);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb__item:not(:first-child) {
+  padding-left: 4px;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: '/';
+  font-family: var(--P);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white-gray4);
+}
+
+.breadcrumb__link {
+  margin: 0;
+  font-family: var(--P);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white-gray4);
+}
+
+.breadcrumb__link-red {
+  color: var(--red-pink);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper2 {
+  height: 100%;
+  overflow: hidden;
+}
+
+.flowers-card__slider {
+  max-width: 516px;
+  max-height: 603px;
+  width: calc((100% - 30px) / 2);
+}
+
+.flowers-card__title {
+  width: 100%;
+}
+
+.mySwiper3 {
+  height: 20%;
+  padding: 10px 0;
+  outline: 1px solid var(--invis);
+  outline-offset: -4px;
+}
+
+.mySwiper3 .swiper-slide-3 {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+  outline: 4px solid #ed2353;
+  outline-offset: -4px;
+  transition: all 0.1s ease-in-out;
+}
+
+.swiper-slide-all img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flowers-card__h1 {
+  margin: 0 0 20px;
+  font-family: var(--P);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.flowers-card__article {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--gray-white);
+}
+
+.flowers-card__list-characteristics {
+  margin: 0 0 25px;
+}
+
+.flowers-card__div-1 {
+  margin: 0 0 56px;
+}
+
+.characteristic__title {
+  margin: 0px;
+  width: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-white);
+}
+
+.characteristic__text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-gray);
+}
+
+.characteristic__text-link {
+  color: var(--black-gray);
+  text-decoration: underline;
+}
+
+.flowers-card__descr {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.div-2__text {
+  margin: 0 0 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-gray);
+}
+
+.div-2__price {
+  display: flex;
+  align-items: end;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+
+.description__h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.description__text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.teg__link {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  outline: 1px solid var(--black);
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.teg__link:hover {
+  background-color: var(--red-pink);
+  color: var(--white);
+}
+
+.teg__link:active {
+  background-color: var(--red-pink3);
+  color: var(--white-gray4);
+}
+
+.advantages__text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-gray);
+}
+
+.flowers-card__div-title {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 90px;
+}
+
+.flowers-card__div-title,
+.flowers-card__div-description {
+  border-bottom: 1px solid var(--red-pink);
+}
+
+.flowers-card__div-description {
+  margin-bottom: 20px;
+  padding: 30px 0;
+}
+
+.flowers-card__slider {
+  position: relative;
+}
+
+.mySwiper3 {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  padding: 0;
+  overflow: visible;
+}
+
+.swiper-wrapper-3 {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.swiper-slide-3 {
+  max-width: 79px;
+  max-height: 85px;
+}
+
+.flowers-card__container {
+  margin: 0 auto;
+  padding: 40px 50px 90px 150px;
+  max-width: 1380px;
+}
+
+.btns {
+  display: flex;
+  gap: 13px;
+}
+
+.flowers-card__characteristic {
+  display: flex;
+  gap: 138px;
+  padding: 22px 0;
+  border-bottom: 1px solid #F0F0F5;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+  width: 100%;
+  max-width: 130px;
+  max-height: 59px;
+  border-radius: 44.25px;
+  outline: 1.5px solid var(--white-gray3);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.slider__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15.5px 32.5px 15.5px 28px;
+  max-width: 191px;
+  border-radius: 80px;
+  border: 1px solid var(--invis);
+  outline: 1px solid var(--invis);
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--red-pink);
+  cursor: pointer;
+  fill: var(--white);
+  transition: fill 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out,
+    outline 0.2s ease-in-out;
+}
+
+.slider__btn-svg {
+  fill: inherit;
+}
+
+.slider__btn:focus {
+  color: var(--red-pink);
+  background-color: var(--white);
+  fill: var(--red-pink);
+  outline-color: var(--red-pink);
+}
+
+.slider__btn:hover {
+  color: var(--red-pink);
+  background-color: var(--white);
+  fill: var(--red-pink);
+  outline-color: var(--red-pink);
+}
+
+.slider__btn:active {
+  color: var(--red-pink3);
+  background-color: var(--white);
+  fill: var(--red-pink3);
+  outline-color: var(--red-pink3);
+}
+
+
+
+.counter svg {
+  cursor: pointer;
+}
+
+.btns__one-click {
+  margin: 0;
+  padding: 20px 26px;
+  border: none;
+  border-radius: 30px;
+  outline: 1px solid var(--white-gray3);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--red-pink);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btns__one-click:hover {
+  background-color: var(--red-pink);
+  color: var(--white);
+}
+
+.btns__one-click:active {
+  background-color: var(--red-pink3);
+  color: var(--white-gray4);
+}
+
+.description__h3 {
+  margin: 0 0 5px;
+}
+
+.description__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.description__teg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18.5px;
+}
+
+.teg {
+  display: inline-block;
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 21.5px 0 21.5px 70px;
+  width: calc((100% - 160px) / 2);
+}
+
+.advantages__item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 62px;
+  height: 62px;
+  border-radius: 45px;
+  background-color: var(--red-pink);
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item:nth-child(4)::after {
+  background-image: url(../img/flowers-camera.svg);
+}
+
+.advantages__item:nth-child(3)::after {
+  background-image: url(../img/flowers-gift.svg);
+}
+
+.advantages__item:nth-child(2)::after {
+  background-image: url(../img/flowers-image.svg);
+}
+
+.advantages__item:nth-child(1)::after {
+  background-image: url(../img/flowers-star.svg);
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 160px;
+  width: 100%;
+}
+
+.color-red {
+  color: var(--red-pink);
+}
+
+.slider__old-price {
+  margin: 0;
+  padding: 0 0 5px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #a9a9b6;
+}
+
+.slider__price {
+  margin: 0;
+  font-weight: 900;
+  font-size: 36px;
+  color: #ed2353;
+}
+
+@media(max-width: 1300px) {
+  .flowers-card__slider {
+    width: calc((90% - 30px) / 2);
+  }
+
+  .flowers-card__characteristic {
+    gap: 105px;
+  }
+
+  .flowers-card__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .flowers-card__div-1 {
+    margin: 0;
+  }
+
+  .btns__one-click {
+    margin: 0;
+    padding: 20px 16px;
+  }
+
+  .div-2__price {
+    display: flex;
+    align-items: end;
+    gap: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .flowers-card__slider {
+    width: calc((90% - 20px) / 2);
+  }
+
+  .flowers-card__div-title {
+    gap: 20px;
+  }
+
+  .flowers-card__h1 {
+    margin: 0 0 10px;
+  }
+
+  .flowers-card__article {
+    margin: 0 0 20px;
+  }
+
+  .flowers-card__characteristic {
+    gap: 70px;
+    padding: 15px 0;
+  }
+
+  .flowers-card__list-characteristics {
+    margin: 0 0 15px;
+  }
+
+  .flowers-card__div-1 {
+    margin-bottom: 0;
+  }
+
+  .div-2__text {
+    margin: 0 0 15px;
+  }
+
+  .div-2__price {
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+
+  .flowers-card__slider {
+    max-height: 488px;
+  }
+
+  .counter {
+    padding: 8px;
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .slider__btn {
+    max-height: 40px;
+    padding: 15.5px 14px 15.5px 14px;
+    max-width: 140px;
+  }
+
+  .btns__one-click {
+    padding: 10px 5px;
+    max-height: 40px;
+    font-size: 15px;
+  }
+
+  .flowers-card__div-title {
+    padding-bottom: 60px;
+  }
+
+  .flowers-card__div-description {
+    margin-bottom: 15px;
+    padding: 20px 0;
+  }
+
+  .description__teg {
+    gap: 10px;
+  }
+
+  .advantages__list {
+    gap: 20px 90px;
+  }
+
+  .advantages__item {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 90px) / 2);
+  }
+
+  .btns {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media(max-width: 1060px) {
+  .flowers-card__container {
+    padding: 0px 30px 0px 100px;
+  }
+
+  .mySwiper3 {
+    left: -70px;
+  }
+
+  .swiper-slide-3 {
+    max-width: 65px;
+    max-height: 75px;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .flowers-card__container {
+    padding: 0px 30px 0px 30px;
+  }
+
+  .flowers-card__slider {
+    width: calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 612px;
+  }
+
+  .swiper-wrapper-3 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .swiper-slide-3 {
+    max-width: 75px;
+    max-height: 85px;
+  }
+
+  .mySwiper3 {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .flowers-card__characteristic {
+    gap: 60px;
+    padding: 12px 0;
+  }
+
+  .flowers-card__h1 {
+    margin: 0 0 5px;
+  }
+
+  .flowers-card__article {
+    margin: 0 0 15px;
+  }
+
+  .flowers-card__list-characteristics {
+    margin: 0 0 8px;
+  }
+
+  .div-2__price {
+    gap: 20px;
+  }
+
+  .counter {
+    padding: 1px;
+    max-width: 70px;
+    font-size: 14px;
+  }
+
+  .flowers-card__slider {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .slider__btn {
+    padding: 15.5px 5px 15.5px 6px;
+    max-width: 110px;
+    font-size: 14px;
+  }
+
+  .btns {
+    gap: 8px;
+  }
+
+  .btns__one-click {
+    padding: 5px 5px;
+    max-height: 40px;
+    font-size: 14px;
+  }
+
+  .flowers-card__div-title {
+    padding-bottom: 50px;
+  }
+
+  .description__h2 {
+    margin: 0 0 15px;
+  }
+
+  .description__h3 {
+    margin: 0 0 3px;
+  }
+
+  .description__list {
+    gap: 20px;
+  }
+
+  .teg__link {
+    padding: 6px 7px;
+  }
+
+  .advantages__item {
+    width: calc((100% - 70px) / 2);
+    padding: 15.5px 0 15.5px 70px;
+  }
+
+  .advantages__list {
+    gap: 15px 70px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .flowers-card__container {
+    padding: 0 5%;
+  }
+
+  .main__section-breadcrumb {
+    padding: 10px 0;
+  }
+
+  .swiper-slide-3 {
+    max-width: 45px;
+    max-height: 53px;
+  }
+
+  .mySwiper3 {
+    left: -45px;
+  }
+
+  .flowers-card__h1 {
+    margin: 0 0 2px;
+    font-size: 30px;
+  }
+
+  .flowers-card__article {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+
+  .flowers-card__characteristic {
+    gap: 40px;
+    padding: 8px 0;
+  }
+
+  .characteristic__title {
+    width: 50px;
+    font-size: 14px;
+  }
+
+  .characteristic__text {
+    font-size: 14px;
+  }
+
+  .flowers-card__list-characteristics {
+    margin: 0 0 5px;
+    font-size: 14px;
+  }
+
+  .div-2__text {
+    margin: 0px 0 6px;
+    font-size: 14px;
+  }
+
+  .slider__price {
+    font-size: 24px;
+  }
+
+  .div-2__price {
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .slider__old-price {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+
+  .flowers-card__descr {
+    font-size: 14px;
+  }
+
+  .btns {
+    flex-wrap: wrap;
+  }
+
+  .counter {
+    max-height: 30px;
+  }
+
+  .slider__btn {
+    padding: 15.5px 9px 15.5px 13px;
+    max-width: 121px;
+    font-size: 14px;
+    max-height: 30px;
+    order: 1;
+  }
+
+  .btns__one-click {
+    max-height: 30px;
+  }
+
+  .flowers-card__div-title {
+    padding-bottom: 40px;
+  }
+
+  .flowers-card__div-description {
+    margin-bottom: 10px;
+    padding: 10px 0 20px;
+  }
+
+  .description__h2 {
+    margin: 0px 0 10px;
+    font-size: 24px;
+  }
+
+  .description__h3 {
+    font-size: 16px;
+  }
+
+  .description__text {
+    font-size: 14px;
+  }
+
+  .teg__link {
+    padding: 4px 5px;
+    font-size: 14px;
+  }
+
+  .flowers-card__slider {
+    max-height: 450px;
+  }
+
+  .advantages__list {
+    gap: 10px 40px;
+  }
+
+  .advantages__text {
+    font-size: 12px;
+  }
+
+  .advantages__item {
+    width: calc((100% - 40px) / 2);
+    padding: 18px 0 18px 55px;
+  }
+
+  .advantages__item::after {
+    width: 50px;
+    height: 50px;
+  }
+
+  .breadcrumb__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flowers-card__div-title {
+    flex-direction: column;
+  }
+
+  .flowers-card__slider {
+    max-width: 700px;
+    max-height: 690px;
+    width: 100%;
+  }
+
+  .swiper-slide-3 {
+    max-width: calc((100% - 200px) / 4);
+    max-height: 118px;
+  }
+
+  .flowers-card__div-title {
+    position: relative;
+    gap: 30px;
+    padding: 80px 0 40px;
+  }
+
+  .div-1-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .flowers-card__article {
+    margin: 0 0 0px;
+    font-size: 16px;
+  }
+
+  .flowers-card__h1 {
+    margin: 0 0 0px;
+    font-size: 40px;
+  }
+
+  .characteristic__title {
+    width: 70px;
+    font-size: 20px;
+  }
+
+  .flowers-card__characteristic {
+    gap: 100px;
+    padding: 18px 0;
+  }
+
+  .characteristic__text {
+    font-size: 18px;
+  }
+
+  .flowers-card__descr {
+    font-size: 16px;
+  }
+
+  .div-2__text {
+    margin: 0px 0 10px;
+    font-size: 16px;
+  }
+
+  .slider__old-price {
+    font-size: 17px;
+    padding-bottom: 3px;
+  }
+
+  .slider__price {
+    font-size: 30px;
+  }
+
+  .div-2__price {
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .counter {
+    max-height: 40px;
+    max-width: 90px;
+  }
+
+  .slider__btn {
+    padding: 15.5px 16px 15.5px 16px;
+    max-width: 130px;
+    font-size: 14px;
+    max-height: 40px;
+    order: 0;
+  }
+
+  .btns__one-click {
+    max-height: 40px;
+  }
+
+  .btns {
+    gap: 15px;
+  }
+
+  .flowers-card__title {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages__text {
+    font-size: 16px;
+  }
+
+  .advantages__list {
+    gap: 15px;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .flowers-card__h1 {
+    font-size: 36px;
+  }
+
+  .flowers-card__article {
+    font-size: 15px;
+  }
+
+  .flowers-card__div-title {
+    gap: 20px;
+  }
+
+  .swiper-slide-3 {
+    max-width: calc((100% - 130px) / 4);
+    max-height: 118px;
+  }
+
+  .flowers-card__characteristic {
+    gap: 80px;
+    padding: 14px 0;
+  }
+
+  .flowers-card__descr {
+    font-size: 14px;
+  }
+
+  .div-2__text {
+    margin: 0px 0 10px;
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .flowers-card__h1 {
+    font-size: 30px;
+  }
+
+  .flowers-card__article {
+    font-size: 14px;
+  }
+
+  .characteristic__text {
+    font-size: 16px;
+  }
+
+  .characteristic__title {
+    width: 70px;
+    font-size: 18px;
+  }
+
+  .btns {
+    gap: 10px 15px;
+  }
+
+  .slider__btn {
+    padding: 15.5px 16px 15.5px 16px;
+    max-width: 140px;
+    width: 100%;
+    font-size: 14px;
+    max-height: 40px;
+    order: 0;
+  }
+
+  .slider__btn {
+    max-width: 65%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btns__one-click {
+    max-height: 40px;
+    min-height: 40px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .counter {
+    max-height: 40px;
+    max-width: 30%;
+  }
+
+  .btns {
+    gap: 10px 5%;
+  }
+
+  .flowers-card__div-title {
+    padding: 60px 0 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .flowers-card__characteristic {
+    gap: 60px;
+    padding: 12px 0;
+  }
+
+  .mySwiper3 .swiper-slide-thumb-active {
+    outline: 2px solid #ed2353;
+    outline-offset: -2px;
+  }
+
+  .flowers-card__h1 {
+    font-size: 28px;
+  }
+
+  .advantages__list {
+    gap: 10px;
+  }
+}
